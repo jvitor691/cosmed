@@ -1,0 +1,1008 @@
+/* =========================================
+   GUIDE SECTION
+========================================= */
+
+.guide-section {
+    position: relative;
+
+    width: 100%;
+
+    padding: 110px 0;
+
+    overflow: hidden;
+
+    color: var(--white);
+
+    background:
+        radial-gradient(circle at 0% 50%,
+            rgba(36, 99, 221, 0.18),
+            transparent 25%),
+        var(--navy);
+}
+
+
+/* =========================================
+   CABEÇALHO
+========================================= */
+
+.guide-section .section-heading.light p {
+    color:
+        rgba(255,
+            255,
+            255,
+            0.75);
+}
+
+.guide-section .section-heading.light h2 {
+    color: var(--yellow);
+}
+
+
+/* =========================================
+   GRID PRINCIPAL
+========================================= */
+
+.guide-grid {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 0.88fr) minmax(0, 1.12fr);
+
+    gap: 52px;
+
+    align-items: center;
+}
+
+
+/* =========================================
+   BENEFÍCIOS
+========================================= */
+
+.benefits-grid {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2,
+            minmax(0, 1fr));
+
+    gap: 15px;
+}
+
+
+/* =========================================
+   BENEFIT CARD
+========================================= */
+
+.benefit-card {
+    position: relative;
+
+    min-width: 0;
+
+    min-height: 185px;
+
+    padding: 24px;
+
+    border-radius: 20px;
+
+    border:
+        1px solid rgba(255,
+            255,
+            255,
+            0.1);
+
+    background: var(--white);
+
+    transition:
+        border-color 0.25s ease,
+        transform 0.25s ease,
+        background 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+
+.benefit-card:hover {
+    transform:
+        translateY(-4px);
+
+    border-color:
+        rgba(246,
+            249,
+            0,
+            0.35);
+
+    background:
+        rgba(255,
+            255,
+            255,
+            0.075);
+
+    box-shadow:
+        0 20px 45px rgba(0,
+            0,
+            0,
+            0.18);
+}
+
+
+/* =========================================
+   PONTO AMARELO
+========================================= */
+
+.benefit-dot {
+    display: block;
+
+    width: 9px;
+    height: 9px;
+
+    margin-bottom: 24px;
+
+    border-radius: 50%;
+
+    background: var(--yellow);
+
+    box-shadow:
+        0 0 18px rgba(246,
+            249,
+            0,
+            0.35);
+}
+
+
+/* =========================================
+   TEXTO DOS BENEFÍCIOS
+========================================= */
+
+.benefit-card h3 {
+    margin:
+        0 0 8px;
+
+    color: var(--navy);
+
+    font-family:
+        var(--font-title);
+
+    font-size: 1.15rem;
+
+    font-weight: 600;
+
+    line-height: 1.25;
+}
+
+
+.benefit-card p {
+    margin: 0;
+
+    color:
+        var(--text-light);
+
+    font-family:
+        var(--font-body);
+
+    font-size: 0.83rem;
+
+    line-height: 1.6;
+}
+
+
+.benefit-card:hover h3,
+.benefit-card:hover p {
+    color: var(--white);
+}
+
+
+/* =========================================
+   CARROSSEL
+========================================= */
+
+.guide-carousel {
+    width: 100%;
+
+    min-width: 0;
+}
+
+
+/*
+   Mantidos caso ainda existam
+   elementos internos utilizando
+   essas classes.
+*/
+
+.carousel-image {
+    position: relative;
+
+    height: 510px;
+
+    overflow: hidden;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 28px;
+
+    border-radius: 28px;
+
+    border:
+        1px solid rgba(255,
+            255,
+            255,
+            0.11);
+
+    background:
+        radial-gradient(circle at center,
+            #172354,
+            #090f28);
+
+    box-shadow:
+        var(--shadow-dark);
+}
+
+
+.carousel-image .real-tag {
+    top: 18px;
+    left: 18px;
+}
+
+
+.carousel-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+
+    transition:
+        opacity 0.35s ease,
+        transform 0.35s ease;
+}
+
+
+.carousel-image:hover img {
+    transform:
+        scale(1.015);
+}
+
+
+/* =========================================
+   CAROUSEL CONTROLS
+========================================= */
+
+.carousel-controls {
+    display: grid;
+
+    grid-template-columns:
+        48px 1fr 48px;
+
+    align-items: center;
+
+    margin-top: 16px;
+}
+
+
+.carousel-controls button {
+    width: 44px;
+    height: 44px;
+
+    display: grid;
+
+    place-items: center;
+
+    border-radius: 50%;
+
+    border:
+        1px solid rgba(255,
+            255,
+            255,
+            0.2);
+
+    background:
+        transparent;
+
+    color:
+        var(--white);
+
+    font-size: 1.15rem;
+
+    transition:
+        color 0.2s ease,
+        border-color 0.2s ease,
+        background 0.2s ease;
+}
+
+
+.carousel-controls button:last-child {
+    margin-left: auto;
+}
+
+
+.carousel-controls button:hover {
+    color:
+        var(--navy-deep);
+
+    border-color:
+        var(--yellow);
+
+    background:
+        var(--yellow);
+}
+
+
+.carousel-controls>span {
+    text-align: center;
+
+    color:
+        rgba(255,
+            255,
+            255,
+            0.48);
+
+    font-family:
+        var(--font-body);
+
+    font-size: 0.7rem;
+
+    font-weight: 500;
+
+    letter-spacing:
+        0.1em;
+}
+
+
+/* =========================================
+   GUIDE FLOW
+========================================= */
+
+.guide-flow {
+    position: relative;
+
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4,
+            minmax(0, 1fr));
+
+    gap: 0;
+
+    margin:
+        76px 0 52px;
+
+    overflow: hidden;
+
+    isolation: isolate;
+
+    border-radius: 24px;
+
+    border:
+        1px solid rgba(246,
+            249,
+            0,
+            0.28);
+
+
+    /*
+       BACKGROUND MAIS VIVO
+    */
+
+    background:
+        radial-gradient(circle at 8% 10%,
+            rgba(36,
+                99,
+                221,
+                0.65),
+            transparent 34%),
+
+        radial-gradient(circle at 88% 0%,
+            rgba(246,
+                249,
+                0,
+                0.23),
+            transparent 28%),
+
+        radial-gradient(circle at 82% 120%,
+            rgba(41,
+                158,
+                0,
+                0.38),
+            transparent 34%),
+
+        linear-gradient(125deg,
+            var(--navy-deep) 0%,
+            var(--blue) 48%,
+            var(--navy) 100%);
+
+
+    box-shadow:
+        0 28px 80px rgba(0,
+            0,
+            0,
+            0.32),
+
+        0 0 60px rgba(36,
+            99,
+            221,
+            0.12),
+
+        inset 0 1px 0 rgba(255,
+            255,
+            255,
+            0.1);
+}
+
+
+/* =========================================
+   GLOW AZUL / AMARELO
+========================================= */
+
+.guide-flow::before {
+    content: "";
+
+    position: absolute;
+
+    z-index: 0;
+
+    width: 420px;
+    height: 420px;
+
+    left: -210px;
+    top: -240px;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(circle,
+            rgba(72,
+                129,
+                255,
+                0.65) 0%,
+            rgba(36,
+                99,
+                221,
+                0.25) 42%,
+            transparent 72%);
+
+    filter: blur(20px);
+
+    pointer-events: none;
+}
+
+
+.guide-flow::after {
+    content: "";
+
+    position: absolute;
+
+    z-index: 0;
+
+    width: 360px;
+    height: 360px;
+
+    right: -150px;
+    bottom: -230px;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(circle,
+            rgba(246,
+                249,
+                0,
+                0.32) 0%,
+            rgba(41,
+                158,
+                0,
+                0.16) 45%,
+            transparent 72%);
+
+    filter: blur(24px);
+
+    pointer-events: none;
+}
+
+
+/* =========================================
+   ITEM DO GUIDE FLOW
+========================================= */
+
+.guide-flow-item {
+    position: relative;
+
+    z-index: 2;
+
+    min-width: 0;
+
+    min-height: 165px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    padding:
+        30px 27px 34px;
+
+    background:
+        linear-gradient(145deg,
+            rgba(255,
+                255,
+                255,
+                0.075),
+            rgba(255,
+                255,
+                255,
+                0.015));
+
+    border-right:
+        1px solid rgba(255,
+            255,
+            255,
+            0.1);
+
+    backdrop-filter:
+        blur(8px);
+
+    -webkit-backdrop-filter:
+        blur(8px);
+
+    transition:
+        background 0.3s ease,
+        transform 0.3s ease;
+}
+
+
+.guide-flow-item:last-of-type {
+    border-right: 0;
+}
+
+
+.guide-flow-item:hover {
+    background:
+        linear-gradient(145deg,
+            rgba(246,
+                249,
+                0,
+                0.13),
+            rgba(36,
+                99,
+                221,
+                0.12));
+}
+
+
+/* =========================================
+   NÚMEROS
+========================================= */
+
+.guide-flow-number {
+    position: relative;
+
+    z-index: 2;
+
+    display: block;
+
+    margin-bottom: 14px;
+
+    color:
+        var(--yellow);
+
+    font-family:
+        var(--font-body);
+
+    font-size: 0.68rem;
+
+    font-weight: 700;
+
+    letter-spacing:
+        0.14em;
+
+    text-shadow:
+        0 0 18px rgba(246,
+            249,
+            0,
+            0.45);
+}
+
+
+/* =========================================
+   TEXTO + SPLITTEXT
+========================================= */
+
+.guide-flow-text {
+    position: relative;
+
+    z-index: 2;
+
+    display: block;
+
+    max-width: 190px;
+
+    color:
+        var(--white);
+
+    font-family:
+        var(--font-title);
+
+    font-size: 1.08rem;
+
+    font-weight: 600;
+
+    line-height: 1.22;
+
+    letter-spacing:
+        -0.02em;
+
+    text-transform:
+        uppercase;
+
+    /*
+       Ajuda a manter caracteres
+       separados mais consistentes
+       visualmente.
+    */
+
+    font-kerning: none;
+}
+
+
+/* =========================================
+   LINHA OUTLINE INFERIOR
+========================================= */
+
+.guide-flow-outline {
+    position: absolute;
+
+    z-index: 5;
+
+    left: 24px;
+    right: 24px;
+
+    bottom: 0;
+
+    height: 3px;
+
+    border-radius:
+        999px 999px 0 0;
+
+    background:
+        linear-gradient(90deg,
+            transparent 0%,
+
+            var(--yellow) 18%,
+
+            #ffffff 40%,
+
+            var(--yellow) 58%,
+
+            var(--blue-bright) 78%,
+
+            var(--green) 92%,
+
+            transparent 100%);
+
+    background-size:
+        220% 100%;
+
+    box-shadow:
+        0 0 8px rgba(246,
+            249,
+            0,
+            0.75),
+
+        0 0 24px rgba(246,
+            249,
+            0,
+            0.38),
+
+        0 -6px 28px rgba(36,
+            99,
+            221,
+            0.18);
+
+    animation:
+        guideFlowOutline 3.5s linear infinite;
+
+    pointer-events: none;
+}
+
+
+/* =========================================
+   ANIMAÇÃO DA LINHA
+========================================= */
+
+@keyframes guideFlowOutline {
+
+    0% {
+        background-position:
+            200% 50%;
+    }
+
+    100% {
+        background-position:
+            -20% 50%;
+    }
+
+}
+
+
+/* =========================================
+   HOVER DOS ITENS
+========================================= */
+
+.guide-flow-item::before {
+    content: "";
+
+    position: absolute;
+
+    left: 24px;
+    right: 24px;
+
+    bottom: 15px;
+
+    height: 1px;
+
+    background:
+        linear-gradient(90deg,
+            transparent,
+            rgba(246,
+                249,
+                0,
+                0.38),
+            transparent);
+
+    opacity: 0;
+
+    transform:
+        scaleX(0.6);
+
+    transition:
+        opacity 0.3s ease,
+        transform 0.3s ease;
+
+    pointer-events: none;
+}
+
+
+.guide-flow-item:hover::before {
+    opacity: 1;
+
+    transform:
+        scaleX(1);
+}
+
+
+/* =========================================
+   CTA FINAL
+========================================= */
+
+.guide-section>.container>.center {
+    position: relative;
+
+    z-index: 2;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1024px) {
+
+    .guide-section {
+        padding:
+            95px 0;
+    }
+
+
+    .guide-grid {
+        grid-template-columns:
+            1fr;
+
+        gap: 45px;
+    }
+
+
+    .guide-carousel {
+        width: 100%;
+
+        max-width: 700px;
+
+        margin:
+            0 auto;
+    }
+
+
+    .guide-flow {
+        margin-top: 62px;
+    }
+
+}
+
+
+/* =========================================
+   TABLET / MOBILE
+========================================= */
+
+@media (max-width: 768px) {
+
+    .guide-section {
+        padding:
+            75px 0;
+    }
+
+
+    /* BENEFÍCIOS */
+
+    .benefits-grid {
+        grid-template-columns:
+            1fr;
+    }
+
+
+    .benefit-card {
+        min-height: auto;
+    }
+
+
+    /* CARROSSEL */
+
+    .carousel-image {
+        height: 460px;
+
+        padding: 16px;
+    }
+
+
+    /* GUIDE FLOW */
+
+    .guide-flow {
+        grid-template-columns:
+            repeat(2,
+                minmax(0, 1fr));
+
+        margin:
+            55px 0 42px;
+
+        border-radius: 20px;
+    }
+
+
+    .guide-flow-item {
+        min-height: 140px;
+
+        padding:
+            23px 22px 30px;
+    }
+
+
+    /*
+       Corrige as divisões no grid 2x2
+    */
+
+    .guide-flow-item:nth-child(2) {
+        border-right: 0;
+    }
+
+
+    .guide-flow-item:nth-child(1),
+    .guide-flow-item:nth-child(2) {
+        border-bottom:
+            1px solid rgba(255,
+                255,
+                255,
+                0.1);
+    }
+
+
+    .guide-flow-item:nth-child(3) {
+        border-right:
+            1px solid rgba(255,
+                255,
+                255,
+                0.1);
+    }
+
+
+    .guide-flow-item:nth-child(4) {
+        border-right: 0;
+    }
+
+
+    .guide-flow-text {
+        max-width: 100%;
+
+        font-size:
+            0.96rem;
+    }
+
+
+    .guide-flow-outline {
+        left: 14px;
+        right: 14px;
+
+        height: 2px;
+    }
+
+}
+
+
+/* =========================================
+   MOBILE PEQUENO
+========================================= */
+
+@media (max-width: 480px) {
+
+    .guide-section {
+        padding:
+            65px 0;
+    }
+
+
+    .guide-flow {
+        grid-template-columns:
+            1fr;
+
+        margin-top: 48px;
+    }
+
+
+    .guide-flow-item {
+        min-height: 112px;
+
+        padding:
+            22px 22px 27px;
+
+        border-right: 0 !important;
+
+        border-bottom:
+            1px solid rgba(255,
+                255,
+                255,
+                0.1);
+    }
+
+
+    .guide-flow-item:last-of-type {
+        border-bottom: 0;
+    }
+
+
+    .guide-flow-number {
+        margin-bottom: 9px;
+    }
+
+
+    .guide-flow-text {
+        max-width: 100%;
+
+        font-size:
+            0.94rem;
+    }
+
+
+    .carousel-image {
+        height: 400px;
+    }
+
+}
+
+
+/* =========================================
+   ACESSIBILIDADE
+========================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .guide-flow-outline {
+        animation: none;
+
+        background-position:
+            center;
+    }
+
+}

@@ -1,0 +1,17 @@
+.word-globe {
+    width: 100%;
+    height: 100%;
+
+    position: relative;
+
+    pointer-events: none;
+
+    user-select: none;
+}
+
+.word-globe-canvas {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+}

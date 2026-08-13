@@ -1,0 +1,1001 @@
+/* =========================================
+   FOOTER
+========================================= */
+
+.footer {
+    position: relative;
+
+    width: 100%;
+
+    padding: 84px 0 28px;
+
+    overflow: hidden;
+
+    color: var(--navy);
+
+    background:
+        linear-gradient(180deg,
+            #ffffff 0%,
+            var(--off-white) 100%);
+}
+
+
+/* =========================================
+   DESTAQUE SUPERIOR
+   SEPARAÇÃO DA SEÇÃO ANTERIOR
+========================================= */
+
+.footer::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: 50%;
+
+    width: min(1180px,
+            calc(100% - 48px));
+
+    height: 4px;
+
+    transform:
+        translateX(-50%);
+
+    border-radius:
+        0 0 999px 999px;
+
+    background:
+        linear-gradient(90deg,
+            transparent 0%,
+            var(--blue-bright) 14%,
+            var(--blue) 31%,
+            var(--yellow) 52%,
+            var(--green) 75%,
+            transparent 100%);
+
+    box-shadow:
+        0 3px 18px rgba(36, 99, 221, 0.22),
+
+        0 5px 28px rgba(246, 249, 0, 0.13);
+
+    z-index: 4;
+
+    pointer-events: none;
+}
+
+
+/* GLOW CENTRAL ABAIXO DA LINHA */
+
+.footer::after {
+    content: "";
+
+    position: absolute;
+
+    top: -105px;
+    left: 50%;
+
+    width: min(900px,
+            75vw);
+
+    height: 210px;
+
+    transform:
+        translateX(-50%);
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(ellipse at center,
+            rgba(36, 99, 221, 0.12) 0%,
+            rgba(246, 249, 0, 0.065) 35%,
+            rgba(41, 158, 0, 0.025) 52%,
+            transparent 73%);
+
+    filter:
+        blur(26px);
+
+    z-index: 0;
+
+    pointer-events: none;
+}
+
+
+/* =========================================
+   DECORAÇÕES
+========================================= */
+
+.footer-decoration {
+    position: absolute;
+
+    inset: 0;
+
+    z-index: 0;
+
+    overflow: hidden;
+
+    pointer-events: none;
+}
+
+
+/* =========================================
+   GLOWS
+========================================= */
+
+.footer-glow {
+    position: absolute;
+
+    display: block;
+
+    border-radius: 50%;
+
+    pointer-events: none;
+}
+
+
+/* AZUL */
+
+.footer-glow-blue {
+    width: 340px;
+    height: 340px;
+
+    left: -185px;
+    top: -175px;
+
+    background:
+        radial-gradient(circle,
+            rgba(36, 99, 221, 0.2) 0%,
+            rgba(36, 99, 221, 0.07) 38%,
+            rgba(36, 99, 221, 0.02) 58%,
+            transparent 74%);
+
+    filter:
+        blur(38px);
+
+    opacity: 0.9;
+}
+
+
+/* AMARELO */
+
+.footer-glow-yellow {
+    width: 320px;
+    height: 320px;
+
+    right: -165px;
+    top: -150px;
+
+    background:
+        radial-gradient(circle,
+            rgba(246, 249, 0, 0.3) 0%,
+            rgba(246, 249, 0, 0.1) 36%,
+            rgba(246, 249, 0, 0.025) 58%,
+            transparent 75%);
+
+    filter:
+        blur(38px);
+
+    opacity: 0.9;
+}
+
+
+/* VERDE */
+
+.footer-glow-green {
+    width: 270px;
+    height: 270px;
+
+    right: 11%;
+    bottom: -175px;
+
+    background:
+        radial-gradient(circle,
+            rgba(41, 158, 0, 0.16) 0%,
+            rgba(41, 158, 0, 0.05) 43%,
+            transparent 74%);
+
+    filter:
+        blur(38px);
+
+    opacity: 0.8;
+}
+
+
+/* =========================================
+   OUTLINES LATERAIS
+========================================= */
+
+.footer-outline {
+    position: absolute;
+
+    width: 125px;
+    height: 125px;
+
+    border:
+        2px solid var(--yellow);
+
+    opacity: 0.7;
+
+    pointer-events: none;
+}
+
+
+/* ESQUERDA */
+
+.footer-outline-left {
+    left: -62px;
+    bottom: 14%;
+
+    border-left: 0;
+
+    border-radius:
+        0 34px 34px 0;
+}
+
+
+/* DIREITA */
+
+.footer-outline-right {
+    right: -62px;
+    top: 17%;
+
+    border-right: 0;
+
+    border-radius:
+        34px 0 0 34px;
+}
+
+
+/* =========================================
+   CONTAINER
+========================================= */
+
+.footer-container {
+    position: relative;
+
+    z-index: 2;
+}
+
+
+/* PEQUENO DETALHE SUPERIOR AZUL */
+
+.footer-container::before {
+    content: "";
+
+    position: absolute;
+
+    top: -84px;
+    left: 0;
+
+    width: 82px;
+    height: 5px;
+
+    border-radius:
+        0 0 999px 999px;
+
+    background:
+        var(--blue-bright);
+
+    box-shadow:
+        0 4px 16px rgba(36, 99, 221, 0.26);
+
+    pointer-events: none;
+}
+
+
+/* =========================================
+   GRID PRINCIPAL
+========================================= */
+
+.footer-grid {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1.65fr) minmax(145px, 0.8fr) minmax(145px, 0.8fr) minmax(165px, 0.9fr);
+
+    gap:
+        clamp(42px,
+            5.5vw,
+            82px);
+
+    align-items: start;
+}
+
+
+/* =========================================
+   MARCA
+========================================= */
+
+.footer-brand {
+    min-width: 0;
+
+    max-width: 470px;
+}
+
+
+/* =========================================
+   FRASE PRINCIPAL
+========================================= */
+
+.footer-slogan {
+    max-width: 455px;
+
+    margin:
+        0 0 30px;
+
+    color:
+        var(--blue);
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size:
+        clamp(1.45rem,
+            2.2vw,
+            1.9rem);
+
+    font-style: italic;
+
+    font-weight: 600;
+
+    line-height: 1.42;
+
+    letter-spacing:
+        -0.025em;
+}
+
+
+/* PONTO FINAL EM AMARELO */
+
+.footer-slogan::after {
+    content: ".";
+
+    color:
+        var(--yellow);
+}
+
+
+/* =========================================
+   REDES SOCIAIS
+========================================= */
+
+.footer-social {
+    display: flex;
+
+    align-items: center;
+
+    gap: 11px;
+}
+
+
+/* BOTÃO BASE */
+
+.footer-social a {
+    width: 45px;
+    height: 45px;
+
+    display: grid;
+
+    place-items: center;
+
+    flex-shrink: 0;
+
+    color:
+        var(--white);
+
+    border:
+        1px solid rgba(11, 20, 37, 0.05);
+
+    border-radius: 50%;
+
+    text-decoration: none;
+
+    box-shadow:
+        0 8px 24px rgba(11, 20, 37, 0.1);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        filter 0.25s ease;
+}
+
+
+.footer-social a svg {
+    width: 20px;
+    height: 20px;
+
+    color:
+        currentColor;
+}
+
+
+/* HOVER */
+
+.footer-social a:hover {
+    transform:
+        translateY(-4px) scale(1.05);
+
+    box-shadow:
+        0 14px 32px rgba(11, 20, 37, 0.17);
+
+    filter:
+        saturate(115%);
+}
+
+
+/* =========================================
+   INSTAGRAM
+========================================= */
+
+.footer-instagram {
+    color:
+        #ffffff;
+
+    background:
+        linear-gradient(135deg,
+            #833ab4 0%,
+            #fd1d1d 55%,
+            #fcb045 100%);
+}
+
+
+/* =========================================
+   TIKTOK
+========================================= */
+
+.footer-tiktok {
+    color:
+        #ffffff;
+
+    background:
+        #090909;
+}
+
+
+/* =========================================
+   WHATSAPP
+========================================= */
+
+.footer-whatsapp {
+    color:
+        #ffffff;
+
+    background:
+        var(--green);
+}
+
+
+/* =========================================
+   EMAIL
+========================================= */
+
+.footer-email {
+    color:
+        #ffffff;
+
+    background: #090909;
+}
+
+
+/* =========================================
+   COLUNAS
+========================================= */
+
+.footer-column {
+    position: relative;
+
+    min-width: 0;
+}
+
+
+/* =========================================
+   TÍTULOS DAS COLUNAS
+========================================= */
+
+.footer-column h3 {
+    margin:
+        4px 0 23px;
+
+    color:
+        var(--navy);
+
+    font-family:
+        var(--font-title);
+
+    font-size:
+        0.72rem;
+
+    font-weight:
+        700;
+
+    letter-spacing:
+        0.18em;
+
+    text-transform:
+        uppercase;
+}
+
+
+/* LINHA DECORATIVA ABAIXO DO TÍTULO */
+
+.footer-column h3::after {
+    content: "";
+
+    display: block;
+
+    width: 32px;
+    height: 2px;
+
+    margin-top: 10px;
+
+    border-radius:
+        999px;
+
+    background:
+        linear-gradient(90deg,
+            var(--blue),
+            var(--yellow));
+}
+
+
+/* =========================================
+   NAVEGAÇÃO
+========================================= */
+
+.footer-column nav {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 14px;
+}
+
+
+/* LINKS */
+
+.footer-column nav a {
+    position: relative;
+
+    color:
+        var(--text-light);
+
+    font-family:
+        var(--font-body);
+
+    font-size:
+        0.87rem;
+
+    font-weight:
+        400;
+
+    line-height:
+        1.4;
+
+    text-decoration: none;
+
+    transition:
+        color 0.2s ease,
+        transform 0.2s ease;
+}
+
+
+/* HOVER */
+
+.footer-column nav a:hover {
+    color:
+        var(--blue);
+
+    transform:
+        translateX(4px);
+}
+
+
+/* PEQUENA LINHA NO HOVER */
+
+.footer-column nav a::before {
+    content: "";
+
+    position: absolute;
+
+    left: -11px;
+    top: 50%;
+
+    width: 0;
+    height: 2px;
+
+    transform:
+        translateY(-50%);
+
+    border-radius:
+        999px;
+
+    background:
+        var(--yellow);
+
+    transition:
+        width 0.2s ease;
+}
+
+
+.footer-column nav a:hover::before {
+    width:
+        6px;
+}
+
+
+/* =========================================
+   PARTE INFERIOR
+========================================= */
+
+.footer-bottom {
+    position: relative;
+
+    width: 100%;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 30px;
+
+    margin-top: 64px;
+
+    padding-top: 25px;
+
+    border-top:
+        1px solid rgba(11, 20, 37, 0.1);
+
+    color:
+        var(--text-secondary);
+
+    font-family:
+        var(--font-body);
+
+    font-size:
+        0.69rem;
+}
+
+
+/* DETALHE COLORIDO SOBRE A LINHA */
+
+.footer-bottom::before {
+    content: "";
+
+    position: absolute;
+
+    top: -2px;
+    left: 0;
+
+    width: 140px;
+    height: 3px;
+
+    border-radius:
+        999px;
+
+    background:
+        linear-gradient(90deg,
+            var(--blue-bright),
+            var(--yellow),
+            var(--green));
+
+    box-shadow:
+        0 0 12px rgba(36, 99, 221, 0.12);
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1024px) {
+
+    .footer-grid {
+        grid-template-columns:
+            minmax(0, 1.4fr) repeat(3,
+                minmax(115px, 1fr));
+
+        gap:
+            38px;
+    }
+
+
+    .footer-slogan {
+        font-size:
+            1.4rem;
+    }
+
+}
+
+
+/* =========================================
+   TABLET PEQUENO
+========================================= */
+
+@media (max-width: 850px) {
+
+    .footer {
+        padding:
+            72px 0 26px;
+    }
+
+
+    .footer-grid {
+        grid-template-columns:
+            repeat(2,
+                minmax(0, 1fr));
+
+        gap:
+            48px 34px;
+    }
+
+
+    .footer-brand {
+        grid-column:
+            1 / -1;
+
+        max-width:
+            600px;
+    }
+
+
+    .footer-container::before {
+        top:
+            -72px;
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+    .footer {
+        padding:
+            65px 0 24px;
+    }
+
+
+    /* LINHA SUPERIOR */
+
+    .footer::before {
+        width:
+            calc(100% - 30px);
+
+        height:
+            3px;
+    }
+
+
+    /* GLOW */
+
+    .footer::after {
+        width:
+            95vw;
+
+        height:
+            170px;
+
+        top:
+            -85px;
+    }
+
+
+    /* GRID */
+
+    .footer-grid {
+        grid-template-columns:
+            repeat(2,
+                minmax(0, 1fr));
+
+        gap:
+            40px 24px;
+    }
+
+
+    .footer-brand {
+        grid-column:
+            1 / -1;
+    }
+
+
+    /* FRASE */
+
+    .footer-slogan {
+        max-width:
+            390px;
+
+        margin-bottom:
+            25px;
+
+        font-size:
+            1.32rem;
+    }
+
+
+    /* REDES */
+
+    .footer-social a {
+        width:
+            42px;
+
+        height:
+            42px;
+    }
+
+
+    .footer-social a svg {
+        width:
+            19px;
+
+        height:
+            19px;
+    }
+
+
+    /* BOTTOM */
+
+    .footer-bottom {
+        flex-direction:
+            column;
+
+        align-items:
+            flex-start;
+
+        gap:
+            8px;
+
+        margin-top:
+            50px;
+    }
+
+
+    /* OUTLINES */
+
+    .footer-outline {
+        width:
+            82px;
+
+        height:
+            82px;
+    }
+
+
+    .footer-outline-left {
+        left:
+            -42px;
+    }
+
+
+    .footer-outline-right {
+        right:
+            -42px;
+    }
+
+
+    .footer-container::before {
+        width:
+            58px;
+
+        top:
+            -65px;
+    }
+
+}
+
+
+/* =========================================
+   MOBILE PEQUENO
+========================================= */
+
+@media (max-width: 420px) {
+
+    .footer {
+        padding:
+            60px 0 22px;
+    }
+
+
+    .footer-grid {
+        grid-template-columns:
+            1fr;
+
+        gap:
+            34px;
+    }
+
+
+    .footer-brand {
+        grid-column:
+            auto;
+    }
+
+
+    /* DIVIDE AS COLUNAS */
+
+    .footer-column:not(:last-child) {
+        padding-bottom:
+            23px;
+
+        border-bottom:
+            1px solid rgba(11, 20, 37, 0.08);
+    }
+
+
+    .footer-column h3 {
+        margin-bottom:
+            17px;
+    }
+
+
+    .footer-column nav {
+        gap:
+            11px;
+    }
+
+
+    /* REDES */
+
+    .footer-social {
+        gap:
+            9px;
+    }
+
+
+    .footer-social a {
+        width:
+            40px;
+
+        height:
+            40px;
+    }
+
+
+    /* OUTLINES */
+
+    .footer-outline {
+        width:
+            66px;
+
+        height:
+            66px;
+    }
+
+
+    /* BOTTOM */
+
+    .footer-bottom {
+        margin-top:
+            42px;
+    }
+
+
+    .footer-bottom::before {
+        width:
+            95px;
+    }
+
+}
+
+
+/* =========================================
+   ACESSIBILIDADE
+========================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .footer-social a,
+    .footer-column nav a,
+    .footer-column nav a::before {
+        transition: none;
+    }
+
+}

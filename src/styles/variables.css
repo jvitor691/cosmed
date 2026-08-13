@@ -1,0 +1,132 @@
+:root {
+    /* =========================================
+       CORES OFICIAIS COSMED
+    ========================================= */
+
+    --navy: #0F2667;
+
+    /*
+       A cliente forneceu apenas um tom de navy.
+       Mantemos estes aliases para não quebrar
+       componentes que já usam essas variáveis.
+    */
+    --navy-deep: #0F2667;
+    --navy-light: #0F2667;
+
+
+    /* AZUL */
+    --blue: #436EEB;
+    --blue-bright: #436EEB;
+    --blue-dark: #0F2667;
+
+
+    /* AMARELO */
+    --yellow: #FDFB00;
+
+    /*
+       Mantemos a variável porque ela já é usada
+       nos botões. O hover será feito com filter.
+    */
+    --yellow-hover: #FDFB00;
+
+
+    /* VERMELHO */
+    --red: #B50000;
+    --red-dark: #B50000;
+
+
+    /* VERDE */
+    --green: #A4EF00;
+    --green-dark: #A4EF00;
+
+
+    /* =========================================
+       NEUTROS
+    ========================================= */
+
+    --white: #FFFFFF;
+
+    --paper: #FBF9F4;
+    --off-white: #FBF9F4;
+
+
+    /* =========================================
+       TEXTOS
+    ========================================= */
+
+    --text: #0F2667;
+    --text-dark: #0F2667;
+
+    --text-light:
+        rgba(15, 38, 103, 0.68);
+
+    --text-secondary:
+        rgba(15, 38, 103, 0.58);
+
+
+    /* =========================================
+       BORDAS
+    ========================================= */
+
+    --border-light:
+        rgba(15, 38, 103, 0.10);
+
+    --border-dark:
+        rgba(255, 255, 255, 0.12);
+
+
+    /* =========================================
+       CONTAINER
+    ========================================= */
+
+    --container: 1180px;
+
+
+    /* =========================================
+       RADIUS
+    ========================================= */
+
+    --radius-sm: 14px;
+    --radius-md: 22px;
+    --radius-lg: 32px;
+
+
+    /* =========================================
+       SOMBRAS
+    ========================================= */
+
+    --shadow-soft:
+        0 20px 60px rgba(15, 38, 103, 0.12);
+
+    --shadow-dark:
+        0 30px 70px rgba(0, 0, 0, 0.30);
+
+
+    /* =========================================
+       TIPOGRAFIA
+    ========================================= */
+
+    --font-title:
+        "Poppins",
+        sans-serif;
+
+    --font-body:
+        "Inter",
+        sans-serif;
+
+    --font-button:
+        "Poppins",
+        sans-serif;
+
+    --font-nav:
+        "Inter",
+        sans-serif;
+
+    --font-editorial:
+        "Poppins",
+        sans-serif;
+
+    --font-mono:
+        "Inter",
+        sans-serif;
+}

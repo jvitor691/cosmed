@@ -1,0 +1,210 @@
+/* =========================================
+   HEADER
+========================================= */
+
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
+    width: 100%;
+    height: 72px;
+
+    display: flex;
+    align-items: center;
+
+    background: var(--navy-deep);
+
+    /* sem border-bottom para integrar ao Hero */
+}
+
+
+/* =========================================
+   CONTAINER
+========================================= */
+
+.header-content {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    gap: 45%;
+}
+
+
+/* =========================================
+   LOGO
+========================================= */
+
+.header-logo {
+    display: inline-flex;
+    align-items: center;
+
+    width: auto;
+
+    flex-shrink: 0;
+
+    text-decoration: none;
+}
+
+.header-logo img {
+    display: block;
+
+    width: 170px;
+    max-width: 100%;
+    height: auto;
+
+    object-fit: contain;
+}
+
+
+/* =========================================
+   WHATSAPP
+========================================= */
+
+.header-whatsapp {
+    min-height: 42px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+
+    padding: 0 18px;
+
+    flex-shrink: 0;
+
+    color: var(--navy-deep);
+
+    background: var(--white);
+
+    border-radius: 999px;
+
+    font-family: var(--font-title);
+    font-size: 0.82rem;
+    font-weight: 600;
+
+    line-height: 1;
+
+    text-decoration: none;
+
+    box-shadow:
+        0 8px 24px rgba(41, 158, 0, 0.18);
+
+    transition:
+        transform 0.2s ease,
+        background 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.header-whatsapp svg {
+    width: 20px;
+    height: 20px;
+
+    flex-shrink: 0;
+
+    color: currentColor;
+}
+
+.header-whatsapp:hover {
+    transform: translateY(-2px);
+
+    background: #23840a;
+
+    box-shadow:
+        0 12px 28px rgba(41, 158, 0, 0.28);
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1024px) {
+
+    .header-logo img {
+        width: 155px;
+    }
+
+    .header-whatsapp {
+        min-height: 40px;
+
+        padding: 0 16px;
+
+        font-size: 0.78rem;
+    }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 768px) {
+
+    .header {
+        height: 64px;
+    }
+
+    .header-content {
+        gap: 16px;
+    }
+
+    .header-logo img {
+        width: 140px;
+    }
+
+    .header-whatsapp {
+        width: 40px;
+        min-width: 40px;
+
+        height: 40px;
+        min-height: 40px;
+
+        padding: 0;
+
+        border-radius: 50%;
+    }
+
+    .header-whatsapp span {
+        display: none;
+    }
+
+    .header-whatsapp svg {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+
+/* =========================================
+   MOBILE PEQUENO
+========================================= */
+
+@media (max-width: 480px) {
+
+    .header {
+        height: 60px;
+    }
+
+    .header-logo img {
+        width: 125px;
+    }
+
+    .header-whatsapp {
+        width: 36px;
+        min-width: 36px;
+
+        height: 36px;
+        min-height: 36px;
+    }
+
+    .header-whatsapp svg {
+        width: 18px;
+        height: 18px;
+    }
+}
