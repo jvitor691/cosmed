@@ -13,11 +13,7 @@
 
     color: var(--white);
 
-    background:
-        radial-gradient(circle at 0% 50%,
-            rgba(36, 99, 221, 0.18),
-            transparent 25%),
-        var(--navy);
+    background: #08132F;
 }
 
 

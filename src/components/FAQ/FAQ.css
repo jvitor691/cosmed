@@ -13,10 +13,7 @@
 
     color: var(--white);
 
-    background:
-        linear-gradient(135deg,
-            var(--navy) 0%,
-            var(--navy-deep) 100%);
+    background: #08132F;
 }
 
 

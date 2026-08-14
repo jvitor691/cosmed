@@ -23,11 +23,6 @@ const TrailsSection = () => {
                         Se a sensação é de que ficou tarde,
                         o objetivo não é recuperar tudo de uma vez.
                     </strong>
-                    <p className="trail-note">
-                        Não escolha a trilha que parece mais avançada.
-                        Escolha aquela que representa seus estudos hoje.
-
-                    </p>
                 </div>
 
 
