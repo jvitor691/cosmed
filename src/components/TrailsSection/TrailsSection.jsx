@@ -3,7 +3,7 @@ import "./trailsSection.css";
 
 const TrailsSection = () => {
     return (
-        <section className="trails-section section-light">
+        <section id="trilhas" className="trails-section section-light">
             <div className="container">
 
                 {/* CABEÇALHO */}

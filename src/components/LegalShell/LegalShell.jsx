@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-import "./legal-pages.css";
+import "./legalShell.css";
 
 const LegalShell = ({
     eyebrow = "COSMED",

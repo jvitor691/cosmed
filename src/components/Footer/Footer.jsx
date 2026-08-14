@@ -1,6 +1,5 @@
 import "./footer.css";
 
-import logo from "../../assets/logo-cosmed.png";
 import { config } from "../../data/config";
 
 import InstagramIcon from "@mui/icons-material/Instagram";
@@ -70,13 +69,15 @@ const Footer = () => {
                                 <WhatsAppIcon />
                             </a>
 
-                            <a
-                                href={`mailto:${config.email}`}
-                                className="footer-email"
-                                aria-label="E-mail"
-                            >
-                                <EmailOutlinedIcon />
-                            </a>
+                            {config.email && (
+                                <a
+                                    href={`mailto:${config.email}`}
+                                    className="footer-email"
+                                    aria-label="E-mail"
+                                >
+                                    <EmailOutlinedIcon />
+                                </a>
+                            )}
 
                         </div>
 
@@ -90,7 +91,7 @@ const Footer = () => {
                         <h3>GUIA</h3>
 
                         <nav>
-                            <a href="#">
+                            <a href="#topo">
                                 Guia ENEM 2026
                             </a>
 

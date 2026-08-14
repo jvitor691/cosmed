@@ -28,16 +28,14 @@ const RoundCarousel = ({
   const [paused, setPaused] = useState(false);
 
   const count = images.length;
-
-  if (!count) return null;
-
-  const angle = 360 / count;
+  const safeCount = Math.max(count, 1);
+  const angle = 360 / safeCount;
 
   const factor = 1 + spacing * 0.15;
 
   const radius =
     (imageWidth * factor) /
-    (2 * Math.tan(Math.PI / count));
+    (2 * Math.tan(Math.PI / safeCount));
 
   const degreesPerSecond =
     speed * 6 * (direction === "left" ? -1 : 1);
@@ -88,6 +86,8 @@ const RoundCarousel = ({
       cancelAnimationFrame(rafRef.current);
     };
   }, [radius, degreesPerSecond, paused]);
+
+  if (!count) return null;
 
   const handlePointerDown = (event) => {
     if (!drag) return;

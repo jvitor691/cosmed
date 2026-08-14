@@ -9,7 +9,7 @@ const Header = () => {
             <div className="container header-content">
 
                 <a
-                    href="#"
+                    href="#topo"
                     className="header-logo"
                     aria-label="COSMED - início"
                 >

@@ -3,9 +3,9 @@ import { gsap } from "gsap";
 
 import "./hero.css";
 
-import page1 from "../../assets/hero-page-1.png";
-import page11 from "../../assets/hero-page-11.png";
-import page26 from "../../assets/hero-page-26.png";
+import page1 from "../../assets/hero-page-1.webp";
+import page11 from "../../assets/hero-page-11.webp";
+import page26 from "../../assets/hero-page-26.webp";
 
 const Hero = () => {
     const heroRef = useRef(null);
@@ -251,6 +251,7 @@ const Hero = () => {
 
     return (
         <section
+            id="topo"
             className="hero"
             ref={heroRef}
         >

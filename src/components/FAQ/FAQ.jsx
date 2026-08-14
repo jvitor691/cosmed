@@ -24,7 +24,7 @@ const FAQ = () => {
     };
 
     return (
-        <section className="faq-section">
+        <section id="faq" className="faq-section">
 
             {/* =========================================
                 DECORAÇÕES GERAIS

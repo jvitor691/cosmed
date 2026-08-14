@@ -3,7 +3,7 @@ import "./about.css";
 
 const About = () => {
     return (
-        <section className="about-section">
+        <section id="sobre" className="about-section">
 
             {/* =========================================
                 DECORAÇÕES DE BACKGROUND

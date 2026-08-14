@@ -7,7 +7,6 @@ import OfferSection from "../components/OfferSection/OfferSection";
 import FAQ from "../components/FAQ/FAQ";
 import FinalCTA from "../components/FinalCTA/FinalCTA";
 import Footer from "../components/Footer/Footer";
-import MobileStickyCTA from "../components/MobileStickyCTA/MobileStickyCTA";
 
 const Home = () => {
     return (

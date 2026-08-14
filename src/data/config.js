@@ -1,12 +1,13 @@
 export const config = {
-    originalPrice: "R$ 97,00",
-    launchPrice: "R$ 39,90",
-    installments: "12x de R$ 3,99",
+    originalPrice: "R$ 59,90",
+    launchPrice: "R$ 29,90",
+    installments: "09x de R$ 3,93",
 
-    productLink: "URL_CHECKOUT_AQUI",
+    productLink: "https://hotmart.com/pt-br/marketplace/produtos/guia-de-estudos-cosmed-enem-2026/V107106266T",
 
-    whatsapp: "NUMERO_WHATSAPP_AQUI",
-    email: "EMAIL_SUPORTE_AQUI",
+    whatsapp: "https://wa.me/5585991912650?text=Oi%21%20Vim%20pelo%20site%20da%20COSMED%20e%20quero%20saber%20mais%20sobre%20o%20Guia%20de%20Estudos.",
+    // TODO: adicionar o e-mail de suporte quando ele for fornecido pela cliente.
+    email: null,
 
     instagram: "https://instagram.com/thaiscosmo_",
     tiktok: "https://tiktok.com/@thaiscosmo_",
