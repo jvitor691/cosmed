@@ -1,13 +1,10 @@
-import thais from "../../assets/thais-cosmo-foto.jpg";
+import thais from "../../assets/thais-cosmo-foto.jpeg";
 import "./about.css";
 
 const About = () => {
     return (
         <section id="sobre" className="about-section">
 
-            {/* =========================================
-                DECORAÇÕES DE BACKGROUND
-            ========================================= */}
 
             <div
                 className="about-decoration"
@@ -41,6 +38,7 @@ const About = () => {
                         <img
                             src={thais}
                             alt="Thaís Cosmo"
+                            loading="lazy"
                         />
 
 

@@ -180,6 +180,7 @@ const RoundCarousel = ({
                   src={item.image}
                   alt={item.title}
                   draggable="false"
+                  loading="lazy"
                 />
 
                 <div className="round-carousel-caption">
@@ -197,6 +198,7 @@ const RoundCarousel = ({
                   src={item.image}
                   alt=""
                   draggable="false"
+                  loading="lazy"
                 />
               </div>
             </div>

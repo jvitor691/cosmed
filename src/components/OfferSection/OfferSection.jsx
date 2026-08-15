@@ -127,7 +127,7 @@ const OfferSection = () => {
                         <a
                             href={config.productLink}
                             target="_blank"
-                            rel="noreferrer"
+                            rel="noopener noreferrer"
                             className="btn btn-yellow offer-button"
                         >
                             COMPRAR PELA HOTMART
@@ -223,7 +223,7 @@ const OfferSection = () => {
                         <a
                             href={config.whatsapp}
                             target="_blank"
-                            rel="noreferrer"
+                            rel="noopener noreferrer"
                             className="offer-whatsapp-button"
                         >
                             <WhatsAppIcon />

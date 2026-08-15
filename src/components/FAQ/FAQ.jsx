@@ -8,14 +8,13 @@ import "./FAQ.css";
 const FAQ = () => {
     const [open, setOpen] = useState(0);
 
-    const items = faqItems.map((item) =>
-        item.isPaymentMethods
-            ? {
-                ...item,
-                answer: config.paymentMethods,
-            }
-            : item
-    );
+    const items = faqItems
+        .filter((item) => !item.isPaymentMethods || config.paymentMethods)
+        .map((item) =>
+            item.isPaymentMethods
+                ? { ...item, answer: config.paymentMethods }
+                : item
+        );
 
     const toggleItem = (index) => {
         setOpen((current) =>

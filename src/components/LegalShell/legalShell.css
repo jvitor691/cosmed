@@ -472,6 +472,60 @@
         3px;
 }
 
+.legal-contact {
+    padding: 18px 20px;
+    border-left: 4px solid var(--blue);
+    border-radius: 0 14px 14px 0;
+    background: rgba(67, 110, 235, 0.07);
+}
+
+.legal-contact strong,
+.legal-contact a {
+    overflow-wrap: anywhere;
+}
+
+.legal-table-wrapper {
+    width: 100%;
+    margin: 18px 0;
+    overflow-x: auto;
+    border: 1px solid rgba(15, 38, 103, 0.12);
+    border-radius: 14px;
+}
+
+.legal-table {
+    width: 100%;
+    min-width: 650px;
+    border-collapse: collapse;
+    color: rgba(15, 38, 103, 0.76);
+    font-family: var(--font-body);
+    font-size: 0.9rem;
+    line-height: 1.55;
+}
+
+.legal-table th,
+.legal-table td {
+    padding: 15px 16px;
+    border-right: 1px solid rgba(15, 38, 103, 0.1);
+    border-bottom: 1px solid rgba(15, 38, 103, 0.1);
+    text-align: left;
+    vertical-align: top;
+}
+
+.legal-table th:last-child,
+.legal-table td:last-child {
+    border-right: 0;
+}
+
+.legal-table tbody tr:last-child td {
+    border-bottom: 0;
+}
+
+.legal-table thead th {
+    color: var(--white);
+    background: var(--navy);
+    font-weight: 700;
+}
+
 
 /* =========================================
    NOTA FINAL
@@ -532,6 +586,13 @@
 
     text-decoration:
         none;
+}
+
+.legal-footer-note nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 10px 18px;
 }
 
 
@@ -624,6 +685,10 @@
 
         align-items:
             flex-start;
+    }
+
+    .legal-footer-note nav {
+        justify-content: flex-start;
     }
 
 }

@@ -55,9 +55,13 @@ const LegalShell = ({
                         COSMED
                     </span>
 
-                    <Link to="/">
-                        Voltar ao início
-                    </Link>
+                    <nav aria-label="Documentos legais">
+                        <Link to="/politica-de-privacidade">Privacidade</Link>
+                        <Link to="/termos-de-uso">Termos de Uso</Link>
+                        <Link to="/politica-de-cookies">Cookies</Link>
+                        <Link to="/canal-de-denuncias">Denúncias e Atendimento</Link>
+                        <Link to="/">Voltar ao início</Link>
+                    </nav>
                 </div>
             </div>
         </main>

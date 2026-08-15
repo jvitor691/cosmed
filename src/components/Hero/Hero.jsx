@@ -24,6 +24,10 @@ const Hero = () => {
 
         if (prefersReducedMotion) return;
 
+        const supportsFinePointer = window.matchMedia(
+            "(hover: hover) and (pointer: fine)"
+        ).matches;
+
         /* =========================================
            ANIMAÇÃO DE ENTRADA
         ========================================= */
@@ -136,7 +140,7 @@ const Hero = () => {
         });
 
         const handleMouseMove = (event) => {
-            if (window.innerWidth <= 960) {
+            if (!supportsFinePointer) {
                 return;
             }
 

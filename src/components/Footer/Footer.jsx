@@ -1,6 +1,7 @@
 import "./footer.css";
 
 import { config } from "../../data/config";
+import { Link } from "react-router-dom";
 
 import InstagramIcon from "@mui/icons-material/Instagram";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
@@ -42,7 +43,7 @@ const Footer = () => {
                             <a
                                 href={config.instagram}
                                 target="_blank"
-                                rel="noreferrer"
+                                rel="noopener noreferrer"
                                 className="footer-instagram"
                                 aria-label="Instagram"
                             >
@@ -52,7 +53,7 @@ const Footer = () => {
                             <a
                                 href={config.tiktok}
                                 target="_blank"
-                                rel="noreferrer"
+                                rel="noopener noreferrer"
                                 className="footer-tiktok"
                                 aria-label="TikTok"
                             >
@@ -62,7 +63,7 @@ const Footer = () => {
                             <a
                                 href={config.whatsapp}
                                 target="_blank"
-                                rel="noreferrer"
+                                rel="noopener noreferrer"
                                 className="footer-whatsapp"
                                 aria-label="WhatsApp"
                             >
@@ -124,7 +125,7 @@ const Footer = () => {
                             <a
                                 href={config.instagram}
                                 target="_blank"
-                                rel="noreferrer"
+                                rel="noopener noreferrer"
                             >
                                 Instagram
                             </a>
@@ -132,7 +133,7 @@ const Footer = () => {
                             <a
                                 href={config.tiktok}
                                 target="_blank"
-                                rel="noreferrer"
+                                rel="noopener noreferrer"
                             >
                                 TikTok
                             </a>
@@ -140,7 +141,7 @@ const Footer = () => {
                             <a
                                 href={config.whatsapp}
                                 target="_blank"
-                                rel="noreferrer"
+                                rel="noopener noreferrer"
                             >
                                 Falar com a COSMED
                             </a>
@@ -155,17 +156,21 @@ const Footer = () => {
                         <h3>AJUDA</h3>
 
                         <nav>
-                            <a href={config.supportUrl}>
-                                Suporte
-                            </a>
-
-                            <a href={config.termsUrl}>
+                            <Link to={config.termsUrl}>
                                 Termos de Uso
-                            </a>
+                            </Link>
 
-                            <a href={config.privacyUrl}>
-                                Política de Privacidade
-                            </a>
+                            <Link to={config.privacyUrl}>
+                                Privacidade
+                            </Link>
+
+                            <Link to={config.cookiesUrl}>
+                                Cookies
+                            </Link>
+
+                            <Link to={config.reportsUrl}>
+                                Denúncias e Atendimento
+                            </Link>
 
                             <a href="#faq">
                                 Perguntas frequentes

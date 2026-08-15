@@ -1,22 +1,27 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Navigate, Routes, Route } from "react-router-dom";
+import ScrollToTop from "./components/ScrollToTop";
 import Home from "./pages/Home";
 import NotFound from "./pages/NotFound";
-// import TermosUso from "./pages/Termos-e-Condicao-de-Uso";
-// import PoliticaPrivacidade from "./pages/Politica-de-Privacidade";
-// import PoliticaCookies from "./pages/Politica-de-Cookies";
-// TODO: ativar as páginas legais quando os textos definitivos forem fornecidos.
-// import CanalDenuncias from "./pages/Canal-de-Denuncia";
+import TermosUso from "./pages/TermosUso";
+import PoliticaPrivacidade from "./pages/PoliticaPrivacidade";
+import PoliticaCookies from "./pages/PoliticaCookies";
+import CanalDenuncias from "./pages/CanalDenuncias";
 
 function App() {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
-        {/* <Route path="/termos-de-uso" element={<TermosUso />} />
+        <Route path="/termos-de-uso" element={<TermosUso />} />
         <Route path="/politica-de-privacidade" element={<PoliticaPrivacidade />} />
         <Route path="/politica-de-cookies" element={<PoliticaCookies />} />
-        <Route path="/canal-de-denuncias" element={<CanalDenuncias />} />
-        */}
+        <Route path="/canal-de-denuncias" caseSensitive element={<CanalDenuncias />} />
+        <Route
+          path="/canal-de-Denuncias"
+          caseSensitive
+          element={<Navigate to="/canal-de-denuncias" replace />}
+        />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>

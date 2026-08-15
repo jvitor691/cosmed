@@ -13,13 +13,13 @@ const Header = () => {
                     className="header-logo"
                     aria-label="COSMED - início"
                 >
-                    <img src={logo} alt="COSMED" />
+                    <img src={logo} alt="COSMED" width="500" height="500" />
                 </a>
 
                 <a
                     href={config.whatsapp}
                     target="_blank"
-                    rel="noreferrer"
+                    rel="noopener noreferrer"
                     className="header-whatsapp"
                     aria-label="Falar com a Thaís pelo WhatsApp"
                 >

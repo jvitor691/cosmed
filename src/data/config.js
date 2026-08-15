@@ -10,11 +10,14 @@ export const config = {
     email: null,
 
     instagram: "https://instagram.com/thaiscosmo_",
-    tiktok: "https://tiktok.com/@thaiscosmo_",
+    tiktok: "https://tiktok.com/@thai.med",
 
-    privacyUrl: "#",
-    termsUrl: "#",
-    supportUrl: "#",
+    privacyUrl: "/politica-de-privacidade",
+    termsUrl: "/termos-de-uso",
+    cookiesUrl: "/politica-de-cookies",
+    reportsUrl: "/canal-de-denuncias",
+    supportUrl: null,
 
-    paymentMethods: "FORMAS_DE_PAGAMENTO_AQUI",
+    // TODO: preencher somente após a cliente confirmar as formas de pagamento.
+    paymentMethods: null,
 };
