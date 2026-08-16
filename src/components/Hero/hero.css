@@ -1479,16 +1479,11 @@
     }
 
 
-    .hero-title-main br {
-        display: none;
-    }
 
 
     .hero-title-main {
         font-size:
-            clamp(2.25rem,
-                10.5vw,
-                3rem);
+            2.2rem;
 
         line-height: 0.98;
     }
