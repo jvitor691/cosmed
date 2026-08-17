@@ -1,4 +1,5 @@
 import FocusReveal from "../FocusReveal/FocusReveal";
+import { pushDataLayerEvent } from "../../utils/dataLayer";
 
 import "./finalCTA.css";
 
@@ -34,6 +35,7 @@ const FinalCTA = () => {
                 <a
                     href="#oferta"
                     className="btn btn-yellow final-cta-button"
+                    onClick={() => pushDataLayerEvent("cta_click", { cta_location: "final_cta" })}
                 >
                     QUERO MEU GUIA DE ESTUDOS COSMED
 

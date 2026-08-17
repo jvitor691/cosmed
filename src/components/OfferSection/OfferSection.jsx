@@ -6,6 +6,7 @@ import { offerBenefits } from "../../data/offerBenefits";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import ShoppingBagOutlinedIcon from "@mui/icons-material/ShoppingBagOutlined";
 import CheckRoundedIcon from "@mui/icons-material/CheckRounded";
+import { pushDataLayerEvent } from "../../utils/dataLayer";
 
 const OfferSection = () => {
     return (
@@ -129,6 +130,10 @@ const OfferSection = () => {
                             target="_blank"
                             rel="noopener noreferrer"
                             className="btn btn-yellow offer-button"
+                            onClick={() => {
+                                pushDataLayerEvent("cta_click", { cta_location: "offer" });
+                                pushDataLayerEvent("hotmart_click", { link_url: config.productLink });
+                            }}
                         >
                             COMPRAR PELA HOTMART
                             <span aria-hidden="true">→</span>
@@ -225,6 +230,10 @@ const OfferSection = () => {
                             target="_blank"
                             rel="noopener noreferrer"
                             className="offer-whatsapp-button"
+                            onClick={() => {
+                                pushDataLayerEvent("cta_click", { cta_location: "offer_whatsapp" });
+                                pushDataLayerEvent("whatsapp_click");
+                            }}
                         >
                             <WhatsAppIcon />
 

@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 
 import InstagramIcon from "@mui/icons-material/Instagram";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
+import { pushDataLayerEvent } from "../../utils/dataLayer";
 import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
 import { FaTiktok } from "react-icons/fa6";
 
@@ -66,6 +67,7 @@ const Footer = () => {
                                 rel="noopener noreferrer"
                                 className="footer-whatsapp"
                                 aria-label="WhatsApp"
+                                onClick={() => pushDataLayerEvent("whatsapp_click")}
                             >
                                 <WhatsAppIcon />
                             </a>
@@ -142,6 +144,7 @@ const Footer = () => {
                                 href={config.whatsapp}
                                 target="_blank"
                                 rel="noopener noreferrer"
+                                onClick={() => pushDataLayerEvent("whatsapp_click")}
                             >
                                 Falar com a COSMED
                             </a>
@@ -167,6 +170,14 @@ const Footer = () => {
                             <Link to={config.cookiesUrl}>
                                 Cookies
                             </Link>
+
+                            <button
+                                type="button"
+                                className="footer-cookie-preferences"
+                                onClick={() => window.dispatchEvent(new Event("cosmed:open-cookie-preferences"))}
+                            >
+                                Preferências de Cookies
+                            </button>
 
                             <Link to={config.reportsUrl}>
                                 Denúncias e Atendimento

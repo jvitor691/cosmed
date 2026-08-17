@@ -6,6 +6,7 @@ import "./hero.css";
 import page1 from "../../assets/hero-page-1.webp";
 import page11 from "../../assets/hero-page-11.webp";
 import page26 from "../../assets/hero-page-26.webp";
+import { pushDataLayerEvent } from "../../utils/dataLayer";
 
 const Hero = () => {
     const heroRef = useRef(null);
@@ -294,6 +295,7 @@ const Hero = () => {
                         <a
                             href="#oferta"
                             className="btn btn-yellow hero-main-button"
+                            onClick={() => pushDataLayerEvent("cta_click", { cta_location: "hero" })}
                         >
                             QUERO MINHA APROVAÇÃO
 

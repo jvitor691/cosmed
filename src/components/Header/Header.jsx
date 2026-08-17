@@ -1,6 +1,7 @@
 import "./header.css";
 import logo from "../../assets/logo-cosmed.png";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
+import { pushDataLayerEvent } from "../../utils/dataLayer";
 import { config } from "../../data/config";
 
 const Header = () => {
@@ -22,6 +23,7 @@ const Header = () => {
                     rel="noopener noreferrer"
                     className="header-whatsapp"
                     aria-label="Falar com a Thaís pelo WhatsApp"
+                    onClick={() => pushDataLayerEvent("whatsapp_click")}
                 >
                     <WhatsAppIcon />
                     <span>Falar no WhatsApp</span>

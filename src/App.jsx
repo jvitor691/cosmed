@@ -6,6 +6,7 @@ import TermosUso from "./pages/TermosUso";
 import PoliticaPrivacidade from "./pages/PoliticaPrivacidade";
 import PoliticaCookies from "./pages/PoliticaCookies";
 import CanalDenuncias from "./pages/CanalDenuncias";
+import CookieConsent from "./components/CookieConsent/CookieConsent";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         />
         <Route path="*" element={<NotFound />} />
       </Routes>
+      <CookieConsent />
     </BrowserRouter>
   );
 }

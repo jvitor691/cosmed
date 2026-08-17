@@ -996,3 +996,18 @@
     }
 
 }
+
+.footer-column nav .footer-cookie-preferences {
+    padding: 0;
+    color: var(--text-light);
+    background: transparent;
+    font-family: var(--font-body);
+    font-size: 0.87rem;
+    font-weight: 400;
+    line-height: 1.4;
+    text-align: left;
+}
+
+.footer-column nav .footer-cookie-preferences:hover {
+    color: var(--blue);
+}
